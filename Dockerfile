@@ -13,8 +13,8 @@ RUN dnf -y install glibc.i686 libstdc++.i686 libgcc.i686
 ENV PATH="/opt/gcw0-toolchain/usr/bin:${PATH}"
 
 # Some of these are noarch, perhaps i can copy pasta
-RUN dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-RUN dnf -y install SDL2-devel freeimage-devel freetype-devel curl-devel alsa-lib-devel mesa-libGL-devel rapidjson-devel vlc-devel libvlcpp-devel
+# RUN dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+# RUN dnf -y install SDL2-devel freeimage-devel freetype-devel curl-devel alsa-lib-devel mesa-libGL-devel rapidjson-devel vlc-devel libvlcpp-devel
 
 # Checkout emulationstation
 RUN git clone \
